@@ -150,6 +150,8 @@ ul.speakers .showhide {
 }
 
 ul.speakers .showhide a {
+    padding: 2px 4px;
+    border: 1px solid #aaa;
     color: #aaa;
     text-decoration: none;
     text-transform: uppercase;
