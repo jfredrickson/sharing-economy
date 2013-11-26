@@ -3,15 +3,33 @@ function isMobile() {
     return !($('nav').is(':visible'));
 }
 
+function hideSpeakerBio(speakerListItem, speed) {
+    speakerListItem.children('p').hide(speed);
+    speakerListItem.find('.showhide a').html('Show Info');
+    speakerListItem.attr('data-shown', 'false');
+}
+
+function showSpeakerBio(speakerListItem, speed) {
+    speakerListItem.children('p').show(speed);
+    speakerListItem.find('.showhide a').html('Hide Info');
+    speakerListItem.attr('data-shown', 'true');
+}
+
 $(window).resize(function () {
     if (isMobile()) {
-        // Hide all speaker bios
-        $('ul.speakers p').hide();
-        $('.showhide a').attr('data-shown', false);
+        // Restore previous show/hide state of speaker bios, if any
+        $('.showhide a').each(function () {
+            var speakerListItem = $(this).parent().parent();
+            var itemVisible = (speakerListItem.attr('data-shown') === 'true');
+            if (!itemVisible) {
+                hideSpeakerBio(speakerListItem);
+            } else {
+                showSpeakerBio(speakerListItem);
+            }
+        });
     } else {
         // Show all speaker bios
         $('ul.speakers p').show();
-        $('.showhide a').attr('data-shown', true);
     }
 });
 
@@ -60,15 +78,12 @@ $(document).ready(function () {
     });
 
     $('.showhide a').click(function (event) {
-        var itemVisible = ($(this).attr('data-shown') === 'true');
+        var speakerListItem = $(this).parent().parent();
+        var itemVisible = (speakerListItem.attr('data-shown') === 'true');
         if (!itemVisible) {
-            $(this).parent().parent().children('p').show(150);
-            $(this).html('Hide Info');
-            $(this).attr('data-shown', true);
+            showSpeakerBio(speakerListItem, 150);
         } else {
-            $(this).parent().parent().children('p').hide(150);
-            $(this).html('Show Info');
-            $(this).attr('data-shown', false);
+            hideSpeakerBio(speakerListItem, 150);
         }
         event.preventDefault();
     });
