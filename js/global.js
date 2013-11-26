@@ -41,6 +41,8 @@ $(document).ready(function () {
         offset: '200px'
     });
 
+    $('#register-button').waypoint('sticky');
+
     navLinks.click(function (event) {
         var clickedLinkId = $(this).attr('id');
         var target = clickedLinkId.substr(0, clickedLinkId.length - 5);
@@ -56,7 +58,7 @@ $(document).ready(function () {
         }, 400);
         event.preventDefault();
     });
-    
+
     $('.showhide a').click(function (event) {
         var itemVisible = ($(this).attr('data-shown') === 'true');
         if (!itemVisible) {
