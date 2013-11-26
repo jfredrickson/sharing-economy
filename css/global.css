@@ -145,6 +145,10 @@ ul.speakers li {
 	border-bottom: 1px dotted #ccc;
 }
 
+ul.speakers .showhide {
+    margin-bottom: 10px;
+}
+
 ul.speakers .showhide a {
     color: #aaa;
     text-decoration: none;
