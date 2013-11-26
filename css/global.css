@@ -1,0 +1,170 @@
+/* Global layout for mobile-first design */
+
+/* GENERAL */
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	font: 100 100% Helvetica, serif;
+	color: #333;
+	background: white;
+}
+
+h1, h2, h3, h4 {
+	font: normal 100% 'latolight', Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	margin: 0.5em 0;
+}
+
+h1 { font-size: 1.8em; }
+h2 { font-size: 1.6em; }
+h3 { font-size: 1.4em; }
+h4 { font-size: 1.2em; }
+
+h2 {
+	font-weight: normal;
+	color: #aaa;
+}
+
+p {
+	margin: 1em 0;
+}
+
+header, section, footer {
+	padding: 10px;
+}
+
+.clear {
+	clear: both;
+}
+
+/* HEADER */
+
+header h1 {
+	font-size: 1.2em;
+	margin-bottom: 0;
+}
+
+header .title a {
+	color: #333;
+	display: block;
+	text-decoration: none;
+}
+
+header .subtitle {
+	font: normal 100% 'latoregular', Helvetica, Arial, sans-serif;
+	font-size: 0.8em;
+	margin: 0;
+	padding: 0;
+}
+
+#register-button {
+	margin: 10px 0;
+}
+
+#register-button a {
+	font: normal 100% 'latoregular', Helvetica, Arial, sans-serif;
+	font-size: 0.8em;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+	padding: 8px 15px;
+	background-color: #e00000;
+	border: 1px solid #b00000;
+	display: block;
+}
+
+/* NAVIGATION */
+
+nav {
+	display: none;
+}
+
+/* INTRO */
+
+#intro {
+	color: #d0d0d0;
+	background: black;
+}
+
+#intro h2 {
+	color: #d0d0d0;
+}
+
+/* TOPICS */
+
+#topics {
+	background: #1268a7 url('../images/topics-bg.png') repeat;
+	color: white;
+}
+
+#topics h2 {
+	color: white;
+}
+
+/* SPEAKERS */
+
+ul.speakers {
+	margin: 0;
+	padding: 0;
+	float: left;
+	list-style-type: none;
+}
+
+ul.speakers li {
+	float: left;
+	margin: 10px 0;
+	width: 100%;
+	border-bottom: 1px dotted #ccc;
+}
+
+ul.speakers img {
+	width: 100px;
+	height: 100px;
+	border: 1px solid #ccc;
+	padding: 8px;
+}
+
+/* SPONSORS */
+
+#sponsors {
+	color: #ccc;
+	background: #333;
+}
+
+.sponsor img {
+	display: block;
+	width: 100%;
+}
+
+/* FONTS */
+
+@font-face {
+    font-family: 'latolight';
+    src: url('../fonts/lato-lig-webfont.eot');
+    src: url('../fonts/lato-lig-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato-lig-webfont.woff') format('woff'),
+         url('../fonts/lato-lig-webfont.ttf') format('truetype'),
+         url('../fonts/lato-lig-webfont.svg#latolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'latoregular';
+    src: url('../fonts/lato-reg-webfont.eot');
+    src: url('../fonts/lato-reg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato-reg-webfont.woff') format('woff'),
+         url('../fonts/lato-reg-webfont.ttf') format('truetype'),
+         url('../fonts/lato-reg-webfont.svg#latoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
