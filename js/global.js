@@ -1,3 +1,20 @@
+function isMobile() {
+    // Determine if we're using the mobile layout based on the presence of the navigation menu.
+    return !($('nav').is(':visible'));
+}
+
+$(window).resize(function () {
+    if (isMobile()) {
+        // Hide all speaker bios
+        $('ul.speakers p').hide();
+        $('.showhide a').attr('data-shown', false);
+    } else {
+        // Show all speaker bios
+        $('ul.speakers p').show();
+        $('.showhide a').attr('data-shown', true);
+    }
+});
+
 $(document).ready(function () {
     var sections = $('section');
     var navLinks = $('#topics-link, #speakers-link, #sponsors-link');
@@ -37,6 +54,20 @@ $(document).ready(function () {
         $('html, body').animate({
             scrollTop: 0
         }, 400);
+        event.preventDefault();
+    });
+    
+    $('.showhide a').click(function (event) {
+        var itemVisible = ($(this).attr('data-shown') === 'true');
+        if (!itemVisible) {
+            $(this).parent().parent().children('p').show(150);
+            $(this).html('Hide Info');
+            $(this).attr('data-shown', true);
+        } else {
+            $(this).parent().parent().children('p').hide(150);
+            $(this).html('Show Info');
+            $(this).attr('data-shown', false);
+        }
         event.preventDefault();
     });
 });

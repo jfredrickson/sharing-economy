@@ -127,6 +127,15 @@ ul.speakers li img {
 	height: auto;
 }
 
+ul.speakers .showhide {
+    display: none;
+}
+
+ul.speakers p {
+    visibility: visible;
+    display: block;
+}
+
 ul.speakers li * {
 	margin-right: 20px;
 }

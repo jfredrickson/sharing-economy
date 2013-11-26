@@ -112,6 +112,10 @@ nav {
 
 /* SPEAKERS */
 
+#speakers h2 {
+    color: #333;
+}
+
 ul.speakers {
 	margin: 0;
 	padding: 0;
@@ -124,6 +128,18 @@ ul.speakers li {
 	margin: 10px 0;
 	width: 100%;
 	border-bottom: 1px dotted #ccc;
+}
+
+ul.speakers .showhide a {
+    color: #aaa;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: x-small;
+}
+
+ul.speakers p {
+    display: none;
 }
 
 ul.speakers img {
