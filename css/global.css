@@ -146,24 +146,6 @@ ul.speakers li {
     border-bottom: 1px dotted #ccc;
 }
 
-ul.speakers .showhide {
-    margin-bottom: 10px;
-}
-
-ul.speakers .showhide a {
-    padding: 2px 4px;
-    border: 1px solid #aaa;
-    color: #aaa;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: x-small;
-}
-
-ul.speakers p {
-    display: none;
-}
-
 ul.speakers img {
     width: 100px;
     height: 100px;

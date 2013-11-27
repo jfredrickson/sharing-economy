@@ -1,38 +1,3 @@
-function isMobile() {
-    // Determine if we're using the mobile layout based on the presence of the navigation menu.
-    return !($('nav').is(':visible'));
-}
-
-function hideSpeakerBio(speakerListItem, speed) {
-    speakerListItem.children('p').hide(speed);
-    speakerListItem.find('.showhide a').html('Show Info');
-    speakerListItem.attr('data-shown', 'false');
-}
-
-function showSpeakerBio(speakerListItem, speed) {
-    speakerListItem.children('p').show(speed);
-    speakerListItem.find('.showhide a').html('Hide Info');
-    speakerListItem.attr('data-shown', 'true');
-}
-
-$(window).resize(function () {
-    if (isMobile()) {
-        // Restore previous show/hide state of speaker bios, if any
-        $('.showhide a').each(function () {
-            var speakerListItem = $(this).parent().parent();
-            var itemVisible = (speakerListItem.attr('data-shown') === 'true');
-            if (!itemVisible) {
-                hideSpeakerBio(speakerListItem);
-            } else {
-                showSpeakerBio(speakerListItem);
-            }
-        });
-    } else {
-        // Show all speaker bios
-        $('ul.speakers p').show();
-    }
-});
-
 $(document).ready(function () {
     var sections = $('section');
     var navLinks = $('#topics-link, #speakers-link, #sponsors-link');
@@ -74,17 +39,6 @@ $(document).ready(function () {
         $('html, body').animate({
             scrollTop: 0
         }, 400);
-        event.preventDefault();
-    });
-
-    $('.showhide a').click(function (event) {
-        var speakerListItem = $(this).parent().parent();
-        var itemVisible = (speakerListItem.attr('data-shown') === 'true');
-        if (!itemVisible) {
-            showSpeakerBio(speakerListItem, 150);
-        } else {
-            hideSpeakerBio(speakerListItem, 150);
-        }
         event.preventDefault();
     });
 });

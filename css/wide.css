@@ -146,13 +146,8 @@ ul.speakers li img {
     height: auto;
 }
 
-ul.speakers .showhide {
-    display: none;
-}
-
 ul.speakers p {
-    visibility: visible;
-    display: block;
+    height: 3em;
 }
 
 ul.speakers li * {
