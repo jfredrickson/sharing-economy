@@ -126,6 +126,28 @@ nav {
     color: white;
 }
 
+ul.topics {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+ul.topics li {
+    float: left;
+    display: inline;
+    margin: 10px 0;
+    width: 100%;
+}
+
+ul.topics img {
+    display: block;
+    margin: 0 auto;
+}
+
+ul.topics p {
+    text-align: center;
+}
+
 /* SPEAKERS */
 
 #speakers h2 {
@@ -135,12 +157,12 @@ nav {
 ul.speakers {
     margin: 0;
     padding: 0;
-    float: left;
     list-style-type: none;
 }
 
 ul.speakers li {
     float: left;
+    display: inline;
     margin: 10px 0;
     width: 100%;
     border-bottom: 1px dotted #ccc;

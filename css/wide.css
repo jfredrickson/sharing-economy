@@ -124,11 +124,34 @@ nav .register a {
 }
 
 #intro p {
-    width: 40%;
+    width: 60%;
 }
 
 #intro img {
     float: right;
+}
+
+/* TOPICS */
+
+ul.topics {
+    
+}
+
+ul.topics li {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+ul.topics img {
+    display: block;
+    float: left;
+    margin-right: 10px;
+}
+
+ul.topics p {
+    font-size: 140%;
+    text-align: left;
+    margin-right: 50px;
 }
 
 /* SPEAKERS */
