@@ -142,6 +142,7 @@ ul.topics li {
 ul.topics img {
     display: block;
     margin: 0 auto;
+    width: 60px;
 }
 
 ul.topics p {

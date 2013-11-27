@@ -133,23 +133,20 @@ nav .register a {
 
 /* TOPICS */
 
-ul.topics {
-    
-}
-
 ul.topics li {
     width: 50%;
     margin-bottom: 20px;
 }
 
 ul.topics img {
+    width: 80px;
     display: block;
     float: left;
     margin-right: 10px;
 }
 
 ul.topics p {
-    font-size: 140%;
+    font-size: 120%;
     text-align: left;
     margin-right: 50px;
 }
