@@ -227,6 +227,7 @@ ul.speakers img {
 
 .reg-info h2 {
     font-size: 2em;
+    color: #333;
 }
 
 .reg-price {
@@ -239,13 +240,18 @@ ul.speakers img {
 }
 
 .reg-ended {
-    margin-top: 40px;
+    margin-top: 10px;
     color: #b00000;
     font-size: 1.5em;
     font-weight: bold;
     transform: rotate(-10deg);
     -ms-transform:rotate(-10deg);
     -webkit-transform:rotate(-10deg);
+}
+
+.reg-info img {
+    width: 60px;
+    height: 60px;
 }
 
 /* FOOTER */

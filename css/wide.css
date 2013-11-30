@@ -178,7 +178,7 @@ ul.speakers li * {
     border: 1px solid #ddd;
     margin-right: 6%;
     box-shadow: 0 0 5px rgba(64, 64, 64, 0.3);
-    min-height: 160px;
+    min-height: 210px;
 }
 
 .reg-info>div:last-child {
