@@ -213,6 +213,44 @@ ul.speakers img {
     width: 100%;
 }
 
+/* REGISTRATION */
+
+.reg-info>div {
+    text-align: center;
+    border-top: 1px dotted #ddd;
+    padding-bottom: 10px;
+}
+
+.reg-info>div:last-child {
+    border-bottom: 1px dotted #ddd;
+}
+
+.reg-info h2 {
+    font-size: 2em;
+}
+
+.reg-price {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.reg-link {
+    margin-top: 20px;
+}
+
+.reg-ended {
+    color: #d00000;
+    transform: rotate(-10deg);
+    -ms-transform:rotate(-10deg);
+    -webkit-transform:rotate(-10deg);
+}
+
+/* FOOTER */
+
+.twitter {
+    text-align: center;
+}
+
 /* FONTS */
 
 @font-face {
