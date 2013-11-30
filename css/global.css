@@ -239,7 +239,10 @@ ul.speakers img {
 }
 
 .reg-ended {
-    color: #d00000;
+    margin-top: 40px;
+    color: #b00000;
+    font-size: 1.5em;
+    font-weight: bold;
     transform: rotate(-10deg);
     -ms-transform:rotate(-10deg);
     -webkit-transform:rotate(-10deg);
