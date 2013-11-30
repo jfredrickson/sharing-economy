@@ -172,21 +172,27 @@ ul.speakers li * {
 
 /* REGISTRATION */
 
+#registration {
+    background-color: #e0e0e0;
+}
+
 .reg-info>div {
+    background-color: white;
     width: 28%;
     float: left;
-    border: 1px solid #ddd;
+    border: 1px solid #bbb;
     margin-right: 6%;
-    box-shadow: 0 0 5px rgba(64, 64, 64, 0.3);
     min-height: 210px;
 }
 
 .reg-info>div:last-child {
+    border: 1px solid #bbb;
     margin-right: 0;
 }
 
 /* FOOTER */
 
 footer {
+    background-color: #e0e0e0;
     min-height: 300px;
 }

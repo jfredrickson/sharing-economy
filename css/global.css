@@ -237,6 +237,25 @@ ul.speakers img {
 
 .reg-link {
     margin-top: 20px;
+    display: block;
+    margin: 0;
+    padding: 10px 0;
+    background: white;
+}
+
+.reg-link a {
+    font: normal 100% 'latoregular', Helvetica, Arial, sans-serif;
+    font-size: 0.8em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    padding: 8px 15px;
+    background-color: #e00000;
+    border: 1px solid #b00000;
+    display: block;
+    margin: 0;
 }
 
 .reg-ended {
