@@ -12,7 +12,7 @@ html, body {
 }
 
 body {
-    font: 100 100% Helvetica, serif;
+    font: 100 100% 'latolight', Helvetica, Arial, sans-serif;
     color: #333;
     background: white;
 }
@@ -35,10 +35,12 @@ h2 {
 
 p {
     margin: 1em 0;
+    line-height: 1.4em;
 }
 
 ul {
    padding-left: 2em; 
+   line-height: 1.4em;
 }
 
 header, section, footer {
@@ -172,6 +174,8 @@ ul.topics img {
 
 ul.topics p {
     text-align: center;
+    font: normal 100% 'latolight', Helvetica, Arial, sans-serif;
+    padding: 0   2em;
 }
 
 /* SPEAKERS */

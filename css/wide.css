@@ -113,21 +113,19 @@ nav .register a {
 /* TOPICS */
 
 ul.topics li {
-    width: 50%;
+    width: 33%;
     margin-bottom: 20px;
 }
 
 ul.topics img {
     width: 80px;
     display: block;
-    float: left;
-    margin-right: 10px;
+    margin: 0 auto;
 }
 
 ul.topics p {
     font-size: 120%;
-    text-align: left;
-    margin-right: 50px;
+    text-align: center;
 }
 
 /* SPEAKERS */
