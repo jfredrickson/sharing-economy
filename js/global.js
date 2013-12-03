@@ -15,18 +15,6 @@ function showSpeakerBio(speakerListItem, speed) {
     speakerListItem.attr('data-shown', 'true');
 }
 
-/*
-function equalHeights(element) {
-    var highest = 0;
-    $(element).height('auto');
-    $(element).each(function() {
-        if ($(this).height() > highest) {
-            highest = $(this).height();
-        }
-    });
-    $(element).height(highest);
-}
-*/
 function equalHeights(elements) {
     var highest = 0;
     elements.height('auto');
