@@ -114,4 +114,12 @@ $(document).ready(function () {
         }
         event.preventDefault();
     });
+
+    // If a speaker does not have a bio, hide the "Show Info" button.
+    $('ul.speakers li').each(function () {
+        var hasBiography = ($(this).children('p.biography').length > 0);
+        if (!hasBiography) {
+            $(this).children('.showhide').hide();
+        }
+    });
 });
