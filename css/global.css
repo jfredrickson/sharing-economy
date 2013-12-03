@@ -43,6 +43,11 @@ ul {
    line-height: 1.4em;
 }
 
+a {
+    color: #1268a7;
+    text-decoration: none;
+}
+
 header, section, footer {
     padding: 10px;
 }
@@ -197,11 +202,38 @@ ul.speakers li {
     border-bottom: 1px dotted #ccc;
 }
 
+ul.speakers p {
+    font-family: Helvetica;
+    font-size: 75%;
+}
+
+ul.speakers p.affiliation {
+    font-weight: bold;
+}
+
+ul.speakers p.biography {
+    display: none;
+}
+
 ul.speakers img {
     width: 100px;
     height: 100px;
     border: 1px solid #ccc;
-    padding: 8px;
+    padding: 4px;
+}
+
+ul.speakers .showhide {
+    margin-bottom: 10px;
+}
+
+ul.speakers .showhide a {
+    padding: 2px 4px;
+    border: 1px solid #aaa;
+    color: #aaa;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: x-small;
 }
 
 /* SPONSORS */
