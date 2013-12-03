@@ -56,8 +56,8 @@ $(window).resize(function () {
 });
 
 $(window).bind("load", function () {
-  // Equal heights needs to wait until after everything else has a chance to load.
-  setSpeakerHeights();
+    // Equal heights needs to wait until after everything else has a chance to load.
+    setSpeakerHeights();
 });
 
 $(document).ready(function () {
