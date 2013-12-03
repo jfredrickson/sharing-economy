@@ -242,9 +242,38 @@ ul.speakers .showhide a {
     background: #333;
 }
 
+.sponsor {
+    display: block;
+    clear: both;
+    padding: 20px 0;
+    border-bottom: 1px dotted #555;
+}
+
+.sponsor:last-child {
+    border-bottom: none;
+}
+
 .sponsor img {
     display: block;
     width: 100%;
+    padding-bottom: 20px;
+}
+
+.sponsor span.name {
+    text-align: center;
+    display: block;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.sponsor span.name a {
+    color: white;
+    font-size: x-large;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.sponsor p, .sponsor li {
+    font-size: small;
 }
 
 /* REGISTRATION */

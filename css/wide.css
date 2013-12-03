@@ -159,19 +159,26 @@ ul.speakers li p {
 
 /* SPONSORS */
 
-.sponsor {
-    width: 50%;
-    float: left;
-}
-
 .sponsor img {
-    display: block;
-    margin: auto;
-    width: 75%;
+    width: 200px;
+    float: left;
+    margin-top: 10px;
 }
 
-.sponsor p {
-    margin-right: 20px;
+.sponsor span.name {
+    width: 200px;
+    text-align: left;
+}
+
+.sponsor span.name a {
+    color: white;
+    font-size: x-large;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.sponsor p, .sponsor li {
+    margin-left: 220px;
+    margin-right: 2em;
 }
 
 /* REGISTRATION */
